@@ -1,3 +1,132 @@
-html{
-    
+* {
+    font-family: 'Nunito Sans', sans-serif;
 }
+
+body,
+html {
+    max-width: 1440px;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    top: 0px;
+    left: 0px;
+    width: 1280px;
+    height: 5339px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+ul,
+li,
+ul li {
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #e2e1e1;
+    margin: auto;
+}
+
+header img {
+    position: relative;
+    margin-top: 2.6%;
+    left: 43.7%;
+    width: 13%;
+    height: 48px;
+}
+
+header div {
+    width: 100%;
+    text-align: center;
+    margin: 18px auto 10px auto;
+}
+
+header div ul {
+    width: 100%;
+}
+
+header div ul li {
+    margin-right: 3%;
+}
+
+main {
+    padding: 0% 9.8%;
+    background-color: #F8FAFC ;
+}
+
+.top-main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left-main-container {
+    margin: 9% 5% 5% 0%;
+    text-align: left;
+}
+
+.left-main-container h1 {
+    width: 548px;
+    height: 108px;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+.right-main-container,
+.left-main-container {
+    width: 50%;
+}
+
+.left-main-container button {
+    margin-top: 25px;
+    width: 38%;
+    padding: 17px 49px;
+    background: #1492E6 0% 0% no-repeat padding-box;
+    box-shadow: 0px 16px 48px #00000029;
+    border-radius: 33px;
+}
+
+.right-main-container img {
+    width: 100%;
+    height: 80%;
+    float: right;
+}
+
+.first-cont {
+    margin-top: 100px;
+}
+
+.cont {
+    text-align: center;
+
+}
+
+.cont h2 {
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 60px;
+}
+
+.card-cont {
+    display: flex;
+    flex-direction: row;
+}
+.card-body{
+    margin:0;
+}
+.card{
+    margin-right: 3%;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 18px;
+}
+.card-title{}

@@ -16,7 +16,21 @@ body {
     width: 1280px;
     height: 5339px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.white-bg {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    padding: 0% 9.8%;
+    display: inline-block;
+}
+
+.blue-bg {
+    background-color: #F8FAFC;
+    padding: 0% 9.8%;
+    display: inline-block;
 }
 
 ul,
@@ -31,7 +45,7 @@ header {
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid #e2e1e1;
-    margin: auto;
+    margin: 0;
 }
 
 header img {
@@ -57,8 +71,8 @@ header div ul li {
 }
 
 main {
-    padding: 0% 9.8%;
-    background-color: #F8FAFC ;
+    padding: 0%;
+    flex: 0.85;
 }
 
 .top-main-container {
@@ -86,13 +100,17 @@ h1 {
     width: 50%;
 }
 
-.left-main-container button {
+.btn {
     margin-top: 25px;
     width: 38%;
     padding: 17px 49px;
     background: #1492E6 0% 0% no-repeat padding-box;
     box-shadow: 0px 16px 48px #00000029;
     border-radius: 33px;
+}
+
+.left-main-container button {
+    width: 40%;
 }
 
 .right-main-container img {
@@ -107,12 +125,15 @@ h1 {
 
 .cont {
     text-align: center;
+    margin-bottom: 200px;
 
 }
 
 .cont h2 {
-    font-weight: bold;
-    font-size: 35px;
+    display: inline-block;
+    text-align: center;
+    font: normal normal bold 35px/47px Nunito Sans;
+    letter-spacing: 0px;
     margin-bottom: 60px;
 }
 
@@ -120,13 +141,270 @@ h1 {
     display: flex;
     flex-direction: row;
 }
-.card-body{
-    margin:0;
+
+.card-body {
+    margin: 0;
+    padding: 40px 19px;
 }
-.card{
+
+.card {
     margin-right: 3%;
     background: #FFFFFF;
     box-shadow: 0px 3px 6px #00000029;
     border-radius: 18px;
 }
-.card-title{}
+
+.card-title {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.card-text {
+    text-align: left
+}
+
+.img-card .card {
+    box-shadow: none;
+    background: transparent;
+    display: inline-block;
+    border: none;
+    margin: 50px 5% 0px 0px;
+}
+
+.img-card .card-body {
+    padding-left: 0px;
+    text-align: left;
+    width: 328px;
+    height: 168px;
+}
+
+.card-img-top {
+    width: 170px;
+    height: 150px;
+}
+
+.third-cont {
+    position: relative;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+}
+
+.third-cont .card-cont {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    font-size: 19px;
+    left: 0;
+    width: 65%;
+    margin-bottom: 30px;
+}
+
+.third-cont .even {
+    position: relative;
+    display: inline-block;
+    right: 0;
+    left: 63%;
+}
+
+h6 {
+    text-align: left;
+    font: normal normal bold 24px/32px Nunito Sans;
+    letter-spacing: 0px;
+    align-self: center;
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+.card-head {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+
+}
+
+.card-head img {
+    width: 50px;
+    height: 50px;
+}
+
+.bg-cont {
+    width: 100%;
+    height: 363px;
+    display: inline-block;
+    position: relative;
+    background: #F8FAFC 0% 0% no-repeat padding-box;
+    box-shadow: 0px 16px 48px #00000029;
+    border-radius: 42px;
+    left: -50px;
+    width: 1089px;
+}
+
+.inner-cont {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: left;
+    font: normal normal 900 25px/34px Nunito Sans;
+    margin: 39px 43px;
+}
+
+.inner-cont img {
+    width: 64px;
+    height: 63px;
+}
+
+.inner-cont h4 {
+    position: relative;
+    top: 15%;
+    align-self: center;
+    margin-left: 15px;
+    text-align: left;
+    font: normal normal 900 25px/34px Nunito Sans;
+    letter-spacing: 0px;
+}
+
+.inner-carousel {
+    position: absolute;
+    left: 12%;
+    top: 46%;
+    width: 85%;
+    height: 100%;
+}
+
+.inner-carousel span {
+    display: inline-block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 7px 17px #00000029;
+    border-radius: 50%;
+    top: 20%;
+    right: -6%;
+    text-align: center;
+    font-weight: 900;
+    padding-top: 10px;
+    font-size: 21px;
+    color: #707070;
+}
+
+.carousel-cont {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+
+.profile-cont,
+.profile {
+    display: flex;
+}
+
+.profile-cont {
+    justify-content: space-between;
+    text-align: left;
+}
+
+.card-row .card {
+    width: 285px;
+    height: 293px;
+    padding-bottom: 50px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 16px 48px #00000029;
+}
+
+.card-row .card .card-body .card-text {
+    font: normal normal normal 13px/18px Nunito Sans;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+.profile img {
+    width: 42px;
+    height: 43px;
+}
+
+.profile-title {
+    margin-left: 10px;
+}
+
+.profile-title p:first-of-type {
+    display: inline-block;
+    margin-bottom: 0;
+    width: 100%;
+    height: 18px;
+    text-align: left;
+    font: normal normal 600 13px/18px Nunito Sans;
+}
+
+.profile-title p:last-of-type {
+    text-align: left;
+    font: normal normal 600 13px/18px Nunito Sans;
+    letter-spacing: 0px;
+    color: #615C5C;
+}
+
+.stars {
+    position: absolute;
+    right: 22px;
+    /**28px**/
+    top: 32px;
+}
+
+.card-row .card .card-body {
+    padding: 32px 20px;
+}
+
+.main-img-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin: 60px 8%;
+    text-align: center;
+    font: normal normal bold 18px/24px Nunito Sans;
+}
+
+.img img {
+    width: 185px;
+    height: 78px;
+}
+
+img.last-img {
+    width: 90px;
+    height: 80px;
+}
+
+.second {
+    position: relative;
+    right: 5%;
+}
+
+.second img {
+    width: 150px;
+}
+
+.last {
+    position: relative;
+    width: 98px;
+    height: 58px;
+    right: 40%;
+}
+.cont:last-of-type{
+    margin-bottom: 0px;
+}
+footer {
+    background: #000000 0% 0% no-repeat padding-box;
+    margin-top: auto;
+    width: 100%;
+    height: 369px;
+    color: #FFFFFF;
+}
+
+footer p {
+    position: relative;
+    top: 80%;
+    text-align: center;
+}

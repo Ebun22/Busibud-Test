@@ -21,10 +21,16 @@ body {
     min-height: 100vh;
 }
 
+.mobile {
+    display: none;
+}
+
 .white-bg {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     padding: 0% 9.8%;
     display: inline-block;
+    position: relative;
+    top: 5%;
 }
 
 .blue-bg {
@@ -392,9 +398,11 @@ img.last-img {
     height: 58px;
     right: 40%;
 }
-.cont:last-of-type{
+
+.cont:last-of-type {
     margin-bottom: 0px;
 }
+
 footer {
     background: #000000 0% 0% no-repeat padding-box;
     margin-top: auto;
@@ -407,4 +415,60 @@ footer p {
     position: relative;
     top: 80%;
     text-align: center;
+}
+
+@media screen and (max-width:800px) {
+    .mobile {
+        display: inline-block;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    header div {
+        text-align: left;
+        margin: 0px;
+    }
+
+    header img {
+        position: relative;
+        margin-top: 20px;
+        left: 6%;
+        width: 100px;
+        height: 48px;
+        margin-bottom: 20px;
+        /* top: 10px; */
+    }
+
+    header .navbar {
+        display: none;
+    }
+
+    .hamburg {
+        position: relative;
+        width: 100px;
+        left: 3%;
+        top: 50%;
+        height: 30px;
+        margin: 0px;
+        margin-left: -30px;
+    }
+
+    .hamburg div {
+        background-color: #212020;
+        width: 35px;
+        height: 4px;
+        margin-bottom: 3px;
+        border-radius: 7px;
+    }
+
+    .hamburg .ham-first {
+        width: 20px;
+    }
+
+    .hamburg .ham-second {
+        width: 27px;
+    }
 }

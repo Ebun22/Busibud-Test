@@ -11,16 +11,21 @@ html {
 }
 
 body {
+    position: relative;
     top: 0px;
     left: 0px;
-    width: 1280px;
-    height: 5339px;
+    bottom: 0px;
+    max-width: 1280px;
+    width: 100%;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
-
+div{
+    width: 100%;
+    height: 100%;
+}
 .mobile {
     display: none;
 }
@@ -30,7 +35,7 @@ body {
     padding: 0% 9.8%;
     display: inline-block;
     position: relative;
-    top: 5%;
+    margin-top: 230px;
 }
 
 .blue-bg {
@@ -87,13 +92,9 @@ main {
     justify-content: space-between;
 }
 
-.left-main-container {
-    margin: 9% 5% 5% 0%;
-    text-align: left;
-}
-
 .left-main-container h1 {
-    width: 548px;
+    max-width: 548px;
+    width: 100%;
     height: 108px;
 }
 
@@ -105,7 +106,11 @@ h1 {
 .left-main-container {
     width: 50%;
 }
-
+.left-main-container {
+    margin: 9% 5% 5% 0%;
+    text-align: left;
+    width:70%;
+}
 .btn {
     margin-top: 25px;
     width: 38%;
@@ -405,10 +410,10 @@ img.last-img {
 
 footer {
     background: #000000 0% 0% no-repeat padding-box;
-    margin-top: auto;
+    margin-top: 10%;
     width: 100%;
-    height: 369px;
     color: #FFFFFF;
+    padding: 25% 0px 1% 0px;
 }
 
 footer p {
@@ -435,10 +440,11 @@ footer p {
     header img {
         position: relative;
         margin-top: 20px;
-        left: 6%;
+        left: 21%;
         width: 100px;
         height: 48px;
         margin-bottom: 20px;
+        /* margin-left: 14%; */
         /* top: 10px; */
     }
 
@@ -450,10 +456,13 @@ footer p {
         position: relative;
         width: 100px;
         left: 3%;
-        top: 50%;
-        height: 30px;
+        top: 46%;
+        height: 22px;
         margin: 0px;
-        margin-left: -30px;
+        margin-left: 0px;
+        margin-left: 2.9%;
+        max-width: 50px;
+        align-self: center;
     }
 
     .hamburg div {
@@ -470,5 +479,28 @@ footer p {
 
     .hamburg .ham-second {
         width: 27px;
+    }
+    .blue-bg{
+        padding: 0px;
+    }
+    .right-main-container{
+        width: 100%;
+    }
+    /* .top-container{
+        padding:0%  ;
+    } */
+    .left-main-container{
+        position: absolute;
+        width: 100%;
+        z-index: 100;
+        margin: 0;
+        padding: 9% 5% 7% 5%;
+        text-align: center;
+        color: #fff;
+        background: rgba(0,0,0, 0.5);
+
+    }
+    .left-main-container .btn{
+        width: 100%;
     }
 }

@@ -22,10 +22,12 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-div{
+
+div {
     width: 100%;
     height: 100%;
 }
+
 .mobile {
     display: none;
 }
@@ -108,11 +110,13 @@ h1 {
 .left-main-container {
     width: 50%;
 }
+
 .left-main-container {
     margin: 9% 5% 5% 0%;
     text-align: left;
-    width:70%;
+    width: 70%;
 }
+
 .btn {
     margin-top: 25px;
     width: 38%;
@@ -139,10 +143,11 @@ h1 {
 .cont {
     text-align: center;
     margin-bottom: 200px;
-
+    padding: 0% 4.5%;
 }
 
-.cont h2 {
+.cont h2,
+.third-cont h2 {
     display: inline-block;
     text-align: center;
     font: normal normal bold 35px/47px Nunito Sans;
@@ -181,7 +186,7 @@ h1 {
     background: transparent;
     display: inline-block;
     border: none;
-    margin: 50px 5% 0px 0px;
+    margin: 4.5% 5.8% 0px 0px;
 }
 
 .img-card .card-body {
@@ -200,6 +205,8 @@ h1 {
     position: relative;
     display: inline-block;
     display: flex;
+    text-align: center;
+    margin-bottom: 200px;
     flex-direction: column;
 }
 
@@ -270,8 +277,7 @@ h6 {
 
 .inner-cont h4 {
     position: relative;
-    top: 15%;
-    align-self: center;
+    top: 2.9%;
     margin-left: 15px;
     text-align: left;
     font: normal normal 900 25px/34px Nunito Sans;
@@ -312,16 +318,19 @@ h6 {
 .profile-cont,
 .profile {
     display: flex;
+    width: auto;
+    height: auto;
 }
 
 .profile-cont {
     justify-content: space-between;
     text-align: left;
+    margin-bottom: 10px;
 }
 
 .card-row .card {
     width: 285px;
-    height: 293px;
+    height: 263px;
     padding-bottom: 50px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 16px 48px #00000029;
@@ -364,6 +373,8 @@ h6 {
     right: 22px;
     /**28px**/
     top: 32px;
+    width: auto;
+    height: auto;
 }
 
 .card-row .card .card-body {
@@ -482,16 +493,21 @@ footer p {
     .hamburg .ham-second {
         width: 27px;
     }
-    .blue-bg{
+
+    .blue-bg {
         padding: 0px;
     }
-    .right-main-container{
+
+    .right-main-container {
         width: 100%;
+        height: 550px;
     }
-    .top-main-container{
-        padding:0%  ;
+
+    .top-main-container {
+        padding: 0%;
     }
-    .left-main-container{
+
+    .left-main-container {
         position: absolute;
         width: 100%;
         z-index: 100;
@@ -499,21 +515,82 @@ footer p {
         padding: 9% 5% 7% 5%;
         text-align: center;
         color: #fff;
-        background: rgba(0,0,0, 0.5);
-        height: 400px;
+        background: rgba(0, 0, 0, 0.5);
+        height: 450px;
     }
-    .left-main-container .btn{
+
+    .left-main-container .btn {
         width: 100%;
     }
-    .cont{
+
+    .cont {
         margin-bottom: 20px;
     }
-    .card-cont, .img-card{
+
+    .card-cont,
+    .img-card {
         flex-direction: column;
         padding: 0% 10%;
     }
-    .card-cont div, .img-card div{
+
+    .card-cont div,
+    .img-card div {
         margin-bottom: 20px;
         margin-top: 0px;
+    }
+
+    .img-card .card {
+        margin: 120px 0% 0px 0px;
+        padding-left: 0px;
+    }
+
+    .card-text,
+    .card-body,
+    .card-title {
+        text-align: center;
+    }
+
+    .img-card .card-body {
+        padding-right: 36px;
+    }
+
+    .card-img-top {
+        position: relative;
+        left: 10%;
+    }
+
+    .third-cont .card-cont {
+        padding: 0%;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .third-cont .btn {
+        margin-top: 15px;
+    }
+
+    .third-cont {
+        margin-bottom: 50px;
+    }
+
+    .card-cont .btn,
+    .card-head {
+        width: 100%;
+    }
+
+    .third-cont .even {
+        position: relative;
+        right: 0;
+        left: 0%;
+    }
+
+    .card-head {
+        text-align: center;
+        font-size: 21px;
+    }
+
+    .white-bg {
+        padding: 0% 8%;
     }
 }

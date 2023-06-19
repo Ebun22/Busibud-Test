@@ -593,4 +593,17 @@ footer p {
     .white-bg {
         padding: 0% 8%;
     }
+
+    .row-sm-6 {
+        position: relative;
+        flex-direction: row;
+        right: 10%;
+    }
+
+    .inner-carousel span {
+        position: absolute;
+        top: 35%;
+        right: 0%;
+        left: 20%;
+    }
 }

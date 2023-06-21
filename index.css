@@ -543,9 +543,12 @@ footer p {
     .card-cont,
     .img-card {
         flex-direction: column;
+        align-content: center;
         padding: 0% 10%;
     }
-
+    .img-card{
+        align-content: center;
+    }
     .card-cont div,
     .img-card div {
         margin-bottom: 20px;
@@ -563,9 +566,9 @@ footer p {
         text-align: center;
     }
 
-    .img-card .card-body {
+    /* .img-card .card-body {
         padding-right: 36px;
-    }
+    } */
 
     .card-img-top {
         position: relative;
@@ -629,8 +632,8 @@ footer p {
 
     .row-sm-6 {
         position: relative;
-        flex-direction: row;
-        right: 10%;
+        align-content: center;
+        /* right: 10%; */
         top: -10%;
     }
 
@@ -640,7 +643,13 @@ footer p {
         right: 0%;
         left: 20%;
     }
-
+    .inner-carousel .row-sm-6{
+        flex-direction: row;
+        position: relative;
+        align-content: center;
+        right: 10%;
+        top: -10%;
+    }
     .inner-cont h4 {
         position: relative;
         top: 2.9%;

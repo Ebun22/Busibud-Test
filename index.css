@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   max-width: 1440px;
   margin: 0;
   box-sizing: border-box;
@@ -165,7 +166,7 @@ h1 {
   margin-bottom: 20px;
 }
 .card .card-text {
-  text-align: left;
+  text-align: center;
 }
 .card .img-card .card {
   box-shadow: none;
@@ -576,11 +577,17 @@ footer p {
     background: rgba(0, 0, 0, 0.5);
     height: 450px;
   }
+  .left-main-container h1 {
+    max-width: 100%;
+    max-height: 100%;
+  }
   .left-main-container .btn {
     width: 100%;
   }
   .cont {
     margin-bottom: 20px;
+    padding: 0px;
+    text-align: center;
   }
   .card-cont,
   .img-card {
@@ -638,8 +645,7 @@ footer p {
     background: #F8FAFC 0% 0% no-repeat padding-box;
     box-shadow: 0px;
     border-radius: 42px;
-    left: -50px;
-    width: 1089px;
+    left: -1.5% !important;
   }
   .profile-cont {
     height: 48px;
@@ -686,21 +692,24 @@ footer p {
     transform: translateX(100%);
     transition: all 0.4s linear;
   }
+  .inner-carousel {
+    left: 10%;
+    width: 100%;
+  }
   .inner-carousel span {
     z-index: 100;
   }
   .next {
     position: absolute;
     top: 20% !important;
-    right: 0% !important;
+    right: 4% !important;
     float: right;
     bottom: 25%;
-    left: 22%;
   }
   .prev {
     position: absolute;
     display: inline block;
-    left: -13%;
+    left: -17%;
     top: 20% !important;
     float: left;
     z-index: 100;
@@ -711,24 +720,28 @@ footer p {
     align-content: center;
     right: 10%;
     top: -10%;
-    width: 320px;
+    width: 290px;
     overflow-x: scroll;
     scroll-behavior: smooth;
     /* Firefox */
     -ms-overflow-style: none;
     /* Internet Explorer 10+ */
+    margin: auto;
+  }
+  .inner-cont {
+    margin: 5% 3%;
   }
   .inner-cont h4 {
     position: relative;
     top: 2.9%;
     margin-left: 15px;
-    text-align: left;
+    text-align: center;
     font: normal normal 900 25px/34px "Nunito Sans", sans-serif;
     letter-spacing: 0px;
   }
   div.cont:last-of-type {
     padding: 0px;
-    margin-top: 30%;
+    margin-top: 20%;
   }
   .main-img-cont {
     display: flex;
@@ -759,8 +772,8 @@ footer p {
     margin-bottom: 0px;
   }
   /* .card-row .card {
-      margin-right:30px;
-    } */
+    margin-right:30px;
+  } */
 }
 
 /*# sourceMappingURL=index.css.map */

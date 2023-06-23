@@ -459,9 +459,7 @@ footer p {
 .overlay {
     display: block;
 }
-.slidein{
-    
-}
+
 .animate-left{
     transform: translate(-200px, -200px);
     opacity: 0;
@@ -497,7 +495,7 @@ footer p {
     header img {
         position: relative;
         margin-top: 20px;
-        left: 21%;
+        left: 29%;
         width: 100px;
         height: 48px;
         margin-bottom: 20px;

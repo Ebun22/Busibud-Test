@@ -1,35 +1,30 @@
-console.log("this works")
+console.log("Ebun built this")
 var count = 0;
+
+//interaction for hamburger icon
 document.querySelector(".hamburg").addEventListener('click', () => {
     console.log("this works")
     document.querySelector("header .navbar").classList.add("open");
     document.querySelector("header .navbar").classList.remove("hide");
     document.querySelector("ul").classList.remove("fade");
     document.querySelector("ul").classList.add("notfade");
-    // document.querySelector(".person-avatar").classList.add("open");
-    // document.querySelector(".nav-cont").classList.add("open");
 })
 
+//interaction for hamburger icon
 document.querySelector(".close").addEventListener('click', () => {
     console.log("this works")
     document.querySelector("header .navbar").classList.add("hide")
     document.querySelector("header .navbar").classList.remove("open");
     document.querySelector("ul").classList.add("fade")
     document.querySelector("ul").classList.remove("notfade");
-    // document.querySelector(".person-avatar").classList.add("open");
-    // document.querySelector(".nav-cont").classList.add("open");
 })
 
+//animate text- left & right
 window.addEventListener("scroll", () => {
     const left = document.querySelectorAll(".animate-left");
     const right = document.querySelectorAll(".animate-right");
-    // const position = li.getBoundingClientRect().top;
-    // const screenPos = window.innerHeight;
-
+    
     right.forEach((element) => {
-
-        //   const element = li.clientHeight; && (position + element)&& (position + elementLeft) > 0
-        //   const elementLeft = right[i].clientHeight
         const position = element.getBoundingClientRect().top;
         const screenPos = window.innerHeight;
 
@@ -48,21 +43,11 @@ window.addEventListener("scroll", () => {
     });
 });
 
+//implementation of card slider
 var next = document.querySelector(".next");
 var prev = document.querySelector(".prev");
 
-// function scrollFunction(isMobile) {
-//     if (!isMobile) { 
-//         next.removeEventListener('click', () => {})
-//         console.log("computer")
-//     }
-//   }
-  
-//   var matchMedia =  window.matchMedia("max-width:800px") // or whatever you consider mobile width for your use case.
-//   scrollFunction(matchMedia.matches) // Call listener function at run time
-// //   matchMedia.addListener(myFunction)
-
-
+//touchstart works only on mobile
 next.addEventListener('touchstart', () => {
     console.log(count)
     count++

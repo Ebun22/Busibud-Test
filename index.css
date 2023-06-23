@@ -1,862 +1,766 @@
-* {
-    font-family: 'Nunito Sans', sans-serif;
-}
-
-body,
-html {
-    max-width: 1440px;
-    margin: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
+body, html {
+  max-width: 1440px;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
-    position: relative;
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
-    max-width: 1280px;
-    width: 100%;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  max-width: 1280px;
+  width: 100%;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 div {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .mobile {
-    display: none;
+  display: none;
 }
 
 .white-bg {
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    padding: 0% 9.8%;
-    display: inline-block;
-    position: relative;
-    margin-top: 230px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  padding: 0% 9.8%;
+  display: inline-block;
+  position: relative;
+  margin-top: 230px;
 }
 
 .blue-bg {
-    background-color: #F8FAFC;
-    padding: 0% 5%;
-    display: inline-block;
+  background-color: #F8FAFC;
+  padding: 0% 5%;
+  display: inline-block;
 }
 
 ul,
 li,
 ul li {
-    text-decoration: none;
-    list-style: none;
-    display: inline-block;
+  text-decoration: none;
+  list-style: none;
+  display: inline-block;
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    border-bottom: 1px solid #e2e1e1;
-    margin: 0;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #e2e1e1;
+  margin: 0;
 }
-
 header img {
-    position: relative;
-    margin-top: 2.6%;
-    left: 43.7%;
-    width: 13%;
-    height: 48px;
+  position: relative;
+  margin-top: 2.6%;
+  left: 43.7%;
+  width: 13%;
+  height: 48px;
 }
-
 header div {
-    width: 100%;
-    text-align: center;
-    margin: 18px auto 10px auto;
+  width: 100%;
+  text-align: center;
+  margin: 18px auto 10px auto;
 }
-
 header div ul {
-    width: 100%;
+  width: 100%;
 }
-
 header div ul li {
-    margin-right: 3%;
+  margin-right: 3%;
 }
 
 main {
-    padding: 0%;
-    flex: 0.85;
+  padding: 0%;
+  flex: 0.85;
 }
 
 .top-main-container {
-    display: flex;
-    flex-direction: row;
-    padding: 0% 0% 0% 4.5%;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  padding: 0% 0% 0% 4.5%;
+  justify-content: space-between;
 }
 
 .left-main-container h1 {
-    max-width: 548px;
-    max-height: 550px;
-    width: 100%;
-    height: 108px;
+  max-width: 548px;
+  max-height: 550px;
+  width: 100%;
+  height: 108px;
 }
 
 h1 {
-    font-weight: 900;
+  font-weight: 900;
 }
 
 .right-main-container,
 .left-main-container {
-    width: 50%;
+  width: 50%;
 }
 
 .left-main-container {
-    margin: 9% 5% 5% 0%;
-    text-align: left;
-    width: 70%;
+  margin: 9% 5% 5% 0%;
+  text-align: left;
+  width: 70%;
 }
 
 .btn {
-    margin-top: 25px;
-    width: 38%;
-    padding: 17px 49px;
-    background: #1492E6 0% 0% no-repeat padding-box;
-    box-shadow: 0px 16px 48px #00000029;
-    border-radius: 33px;
+  margin-top: 25px;
+  width: 38%;
+  padding: 17px 49px;
+  background: #1492E6 0% 0% no-repeat padding-box;
+  box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 33px;
 }
 
 .left-main-container button {
-    width: 40%;
+  width: 40%;
 }
 
 .right-main-container img {
-    width: 100%;
-    height: 80%;
-    float: right;
+  width: 100%;
+  height: 80%;
+  float: right;
 }
 
 .first-cont {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 .cont {
-    text-align: center;
-    margin-bottom: 200px;
-    padding: 0% 4.5%;
+  text-align: center;
+  margin-bottom: 200px;
+  padding: 0% 4.5%;
 }
-
 .cont h2,
-.third-cont h2 {
-    display: inline-block;
-    text-align: center;
-    font: normal normal bold 35px/47px Nunito Sans;
-    letter-spacing: 0px;
-    margin-bottom: 60px;
+.cont .third-cont h2 {
+  display: inline-block;
+  text-align: center;
+  font: normal normal bold 35px/47px "Nunito Sans", sans-serif;
+  margin-bottom: 60px;
 }
 
 .card-cont {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .card-body {
-    margin: 0;
-    padding: 40px 19px;
+  margin: 0;
+  padding: 40px 19px;
 }
 
 .card {
-    margin-right: 3%;
-    background: #FFFFFF;
-    box-shadow: 0px 3px 6px #00000029;
-    border-radius: 18px;
+  margin-right: 3%;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 18px;
 }
-
-.card-title {
-    font-weight: bold;
-    margin-bottom: 20px;
+.card .card-title {
+  font-weight: bold;
+  margin-bottom: 20px;
 }
-
-.card-text {
-    text-align: left
+.card .card-text {
+  text-align: left;
 }
-
-.img-card .card {
-    box-shadow: none;
-    background: transparent;
-    display: inline-block;
-    border: none;
-    margin: 4.5% 5.8% 0px 0px;
+.card .img-card .card {
+  box-shadow: none;
+  background: transparent;
+  display: inline-block;
+  border: none;
+  margin: 4.5% 5.8% 0px 0px;
 }
-
-.img-card .card-body {
-    padding-left: 0px;
-    text-align: left;
-    width: 328px;
-    height: 168px;
+.card .img-card .card .card-body {
+  padding-left: 0px;
+  text-align: left;
+  width: 328px;
+  height: 168px;
 }
-
-.card-img-top {
-    width: 170px;
-    height: 150px;
+.card .card-img-top {
+  width: 170px;
+  height: 150px;
 }
 
 .third-cont {
-    position: relative;
-    display: inline-block;
-    display: flex;
-    text-align: center;
-    margin-bottom: 200px;
-    flex-direction: column;
+  position: relative;
+  display: inline-block;
+  display: flex;
+  text-align: center;
+  margin-bottom: 200px;
+  flex-direction: column;
 }
-
 .third-cont .card-cont {
-    display: inline-block;
-    position: relative;
-    text-align: left;
-    font-size: 19px;
-    left: 0;
-    width: 65%;
-    margin-bottom: 30px;
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  font-size: 19px;
+  left: 0;
+  width: 65%;
+  margin-bottom: 30px;
 }
-
 .third-cont .even {
-    position: relative;
-    display: inline-block;
-    right: 0;
-    left: 63%;
+  position: relative;
+  display: inline-block;
+  right: 0;
+  left: 63%;
 }
 
 h6 {
-    text-align: left;
-    font: normal normal bold 24px/32px Nunito Sans;
-    letter-spacing: 0px;
-    align-self: center;
-    position: relative;
-    top: 10px;
-    left: 20px;
+  text-align: left;
+  font: normal normal bold 24px/32px "Nunito Sans", sans-serif;
+  letter-spacing: 0px;
+  align-self: center;
+  position: relative;
+  top: 10px;
+  left: 20px;
 }
 
 .card-head {
-    display: flex;
-    flex-direction: row;
-    width: 50%;
-
+  display: flex;
+  flex-direction: row;
+  width: 50%;
 }
-
 .card-head img {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 .bg-cont {
+  width: 100%;
+  height: 363px;
+  display: inline-block;
+  position: relative;
+  background: #F8FAFC 0% 0% no-repeat padding-box;
+  box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 42px;
+  left: -50px;
+  width: 1089px;
+}
+
+.inner-cont {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  text-align: left;
+  font: normal normal 900 25px/34px Nunito Sans;
+  margin: 39px 43px;
+}
+.inner-cont img {
+  width: 64px;
+  height: 63px;
+}
+.inner-cont h4 {
+  position: relative;
+  top: 2.9%;
+  margin-left: 15px;
+  text-align: left;
+  font: normal normal 900 25px/34px "Nunito Sans", sans-serif;
+  letter-spacing: 0px;
+}
+
+.inner-carousel {
+  position: absolute;
+  left: 12%;
+  top: 46%;
+  width: 85%;
+  height: 100%;
+}
+.inner-carousel span {
+  display: inline-block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 7px 17px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 50%;
+  top: 20%;
+  right: -6%;
+  text-align: center;
+  font-weight: 900;
+  padding-top: 10px;
+  font-size: 21px;
+  color: #707070;
+}
+
+.prev {
+  display: none;
+}
+
+.carousel-cont {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+.profile-cont,
+.profile {
+  display: flex;
+  width: auto;
+  height: auto;
+}
+
+.profile-cont {
+  justify-content: space-between;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.card-row .card {
+  width: 285px;
+  height: 263px;
+  padding-bottom: 50px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.1607843137);
+}
+
+.card-row .card .card-body .card-text {
+  font: normal normal normal 13px/18px "Nunito Sans", sans-serif;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.profile img {
+  width: 42px;
+  height: 43px;
+}
+
+.profile-title {
+  margin-left: 10px;
+}
+
+.profile-title p:first-of-type {
+  display: inline-block;
+  margin-bottom: 0;
+  width: 100%;
+  height: 18px;
+  text-align: left;
+  font: normal normal 600 13px/18px "Nunito Sans", sans-serif;
+}
+
+.profile-title p:last-of-type {
+  text-align: left;
+  font: normal normal 600 13px/18px "Nunito Sans", sans-serif;
+  letter-spacing: 0px;
+  color: #615C5C;
+}
+
+.stars {
+  position: absolute;
+  right: 22px;
+  top: 32px;
+  width: auto;
+  height: auto;
+}
+
+.card-row .card .card-body {
+  padding: 32px 20px;
+}
+
+.main-img-cont {
+  display: flex;
+  flex-direction: row;
+  margin-top: 60px;
+  margin: 60px 4.9%;
+  gap: 20%;
+  text-align: center;
+  font: normal normal bold 18px/24px "Nunito Sans", sans-serif;
+}
+.main-img-cont .image-cont {
+  width: auto;
+}
+.main-img-cont .image-cont:nth-last-of-type(2) {
+  margin-right: 0;
+  width: 100%;
+  position: relative;
+  left: -8%;
+}
+.main-img-cont .image-cont:last-of-type {
+  position: relative;
+  left: -10%;
+}
+
+.img img {
+  width: 185px;
+  height: 78px;
+}
+
+img.last-img {
+  width: 90px;
+  height: 80px;
+}
+
+.second img {
+  width: 150px;
+}
+
+.last {
+  position: relative;
+  width: 100%;
+  height: 58px;
+}
+
+.cont:last-of-type {
+  margin-bottom: 0px;
+}
+
+footer {
+  background: #000000 0% 0% no-repeat padding-box;
+  margin-top: 10%;
+  width: 100%;
+  color: #FFFFFF;
+  padding: 25% 0px 1% 0px;
+}
+footer p {
+  position: relative;
+  top: 80%;
+  text-align: center;
+}
+
+.overlay {
+  display: block;
+}
+
+.animate-left {
+  transform: translate(-200px, -200px);
+  opacity: 0;
+  transition: all 0.65s ease-in-out;
+}
+
+.animate-right {
+  transform: translate(200px, 300px);
+  opacity: 0;
+  transition: all 0.65s ease-in-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translate(0px);
+  transition: all 0.65s linear;
+}
+
+@media screen and (max-width: 800px) {
+  .mobile {
+    display: inline-block;
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+  }
+  header div {
+    text-align: left;
+    margin: 0px;
+  }
+  header img {
+    position: relative;
+    margin-top: 20px;
+    left: 29%;
+    width: 100px;
+    height: 48px;
+    margin-bottom: 20px;
+    /* margin-left: 14%; */
+    /* top: 10px; */
+  }
+  header .navbar {
+    position: absolute;
+    display: block;
+    top: 0%;
+    bottom: 0%;
+    /* width: 0%;
+    height: 0%; */
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 200;
+    color: #fff;
+    overflow-x: hidden;
+    transition: all 0.6s linear;
+  }
+  ul {
+    padding: 0;
+    margin-top: 55px;
+    opacity: 0;
+  }
+  ul li {
+    position: relative;
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+    opacity: 1;
+  }
+  .close {
+    position: relative;
+    width: 100%;
+    height: 22px;
+    right: 4%;
+    color: #fff;
+    float: right;
+    /* bottom: 100%; */
+    top: 0.6%;
+    margin: 0px;
+    margin-left: 0px;
+    margin-left: 2.9%;
+    max-width: 50px;
+    align-self: center;
+    font: normal normal normal 2em "Nunito Sans", sans-serif;
+  }
+  .hide {
+    /* transform: translateY(30px); */
+    position: relative;
+    width: 0%;
+    opacity: 1;
+    left: 0;
+    top: 0;
+    transition: all 0.6s linear;
+  }
+  .fade {
+    opacity: 0;
+  }
+  .notfade {
+    opacity: 1;
+  }
+  .open {
+    top: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: 100%;
+    /* transform: translate(0px); */
+    transform: translateX(0%);
+  }
+  .hamburg {
+    position: relative;
+    width: 100px;
+    left: 3%;
+    top: 46%;
+    height: 22px;
+    margin: 0px;
+    margin-left: 0px;
+    margin-left: 2.9%;
+    max-width: 50px;
+    align-self: center;
+  }
+  .hamburg div {
+    background-color: #212020;
+    width: 35px;
+    height: 4px;
+    margin-bottom: 3px;
+    border-radius: 7px;
+  }
+  .hamburg .ham-first {
+    width: 20px;
+  }
+  .hamburg .ham-second {
+    width: 27px;
+  }
+  .blue-bg {
+    padding: 0px;
+  }
+  .right-main-container {
+    width: 100%;
+    height: 550px;
+  }
+  .top-main-container {
+    padding: 0%;
+  }
+  .left-main-container {
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    margin: 0;
+    padding: 9% 5% 7% 5%;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    height: 450px;
+  }
+  .left-main-container .btn {
+    width: 100%;
+  }
+  .cont {
+    margin-bottom: 20px;
+  }
+  .card-cont,
+  .img-card {
+    flex-direction: column;
+    align-content: center;
+    padding: 0% 10%;
+  }
+  .img-card {
+    align-content: center;
+  }
+  .card-cont div,
+  .img-card div {
+    margin-bottom: 20px;
+    margin-top: 0px;
+  }
+  .img-card .card {
+    margin: 120px 0% 0px 0px;
+    padding-left: 0px;
+  }
+  .card-text,
+  .card-body,
+  .card-title {
+    text-align: center;
+  }
+  .card-img-top {
+    position: relative;
+    left: 10%;
+  }
+  .third-cont .card-cont {
+    padding: 0%;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .third-cont .btn {
+    margin-top: 15px;
+  }
+  .third-cont {
+    margin-bottom: 50px;
+  }
+  .card-cont .btn,
+  .card-head {
+    width: 100%;
+  }
+  .third-cont .even {
+    position: relative;
+    right: 0;
+    left: 0%;
+  }
+  .bg-cont {
     width: 100%;
     height: 363px;
     display: inline-block;
     position: relative;
     background: #F8FAFC 0% 0% no-repeat padding-box;
-    box-shadow: 0px 16px 48px #00000029;
+    box-shadow: 0px;
     border-radius: 42px;
     left: -50px;
     width: 1089px;
-}
-
-.inner-cont {
-    display: flex;
-    flex-direction: row;
+  }
+  .profile-cont {
+    height: 48px;
+  }
+  .card-head {
+    text-align: center;
+    font-size: 21px;
+  }
+  .white-bg {
+    padding: 0% 8%;
+  }
+  .row-sm-6.card-cont {
+    padding: 0;
+  }
+  .row-sm-6 {
+    position: relative;
+    align-content: center;
+    /* right: 10%; */
+    top: -10%;
+  }
+  .card-row .card {
     width: 100%;
-    text-align: left;
-    font: normal normal 900 25px/34px Nunito Sans;
-    margin: 39px 43px;
-}
-
-.inner-cont img {
-    width: 64px;
-    height: 63px;
-}
-
-.inner-cont h4 {
+    position: absolute;
+    margin: 0;
+    box-shadow: none;
+    border-color: rgba(137, 137, 137, 0.1607843137);
+  }
+  .card-row .card:first-of-type {
+    transform: translateX(0%);
+    transition: all 0.6s linear;
+    z-index: 99;
+  }
+  .card-row .card:nth-of-type(2) {
+    transform: translateX(0%);
+    transition: all 0.6s linear;
+    z-index: 90;
+  }
+  .card-row .card:last-of-type {
+    transform: translateX(0%);
+    transition: all 0.6s linear;
+    z-index: 80;
+  }
+  .left {
+    transform: translateX(100%);
+    transition: all 0.4s linear;
+  }
+  .inner-carousel span {
+    z-index: 100;
+  }
+  .next {
+    position: absolute;
+    top: 20% !important;
+    right: 0% !important;
+    float: right;
+    bottom: 25%;
+    left: 22%;
+  }
+  .prev {
+    position: absolute;
+    display: inline block;
+    left: -13%;
+    top: 20% !important;
+    float: left;
+    z-index: 100;
+  }
+  .inner-carousel .row-sm-6 {
+    flex-direction: row-reverse;
+    position: relative;
+    align-content: center;
+    right: 10%;
+    top: -10%;
+    width: 320px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+  }
+  .inner-cont h4 {
     position: relative;
     top: 2.9%;
     margin-left: 15px;
     text-align: left;
-    font: normal normal 900 25px/34px Nunito Sans;
+    font: normal normal 900 25px/34px "Nunito Sans", sans-serif;
     letter-spacing: 0px;
-}
-
-.inner-carousel {
-    position: absolute;
-    left: 12%;
-    top: 46%;
-    width: 85%;
-    height: 100%;
-}
-
-.inner-carousel span {
-    display: inline-block;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 7px 17px #00000029;
-    border-radius: 50%;
-    top: 20%;
-    right: -6%;
-    text-align: center;
-    font-weight: 900;
-    padding-top: 10px;
-    font-size: 21px;
-    color: #707070;
-   
-}
-
-.prev {
-    display: none;
-}
-
-.carousel-cont {
+  }
+  div.cont:last-of-type {
+    padding: 0px;
+    margin-top: 30%;
+  }
+  .main-img-cont {
     display: flex;
-    flex-direction: row;
-    width: 50%;
-}
-
-.profile-cont,
-.profile {
-    display: flex;
-    width: auto;
-    height: auto;
-}
-
-.profile-cont {
+    flex-direction: column;
     justify-content: space-between;
-    text-align: left;
-    margin-bottom: 10px;
-}
-
-.card-row .card {
-    width: 285px;
-    height: 263px;
-    padding-bottom: 50px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 16px 48px #00000029;
-}
-
-.card-row .card .card-body .card-text {
-    font: normal normal normal 13px/18px Nunito Sans;
-    letter-spacing: 0px;
-    color: #000000;
-    opacity: 1;
-}
-
-.profile img {
-    width: 42px;
-    height: 43px;
-}
-
-.profile-title {
-    margin-left: 10px;
-}
-
-.profile-title p:first-of-type {
-    display: inline-block;
-    margin-bottom: 0;
-    width: 100%;
-    height: 18px;
-    text-align: left;
-    font: normal normal 600 13px/18px Nunito Sans;
-}
-
-.profile-title p:last-of-type {
-    text-align: left;
-    font: normal normal 600 13px/18px Nunito Sans;
-    letter-spacing: 0px;
-    color: #615C5C;
-}
-
-.stars {
-    position: absolute;
-    right: 22px;
-    /**28px**/
-    top: 32px;
-    width: auto;
-    height: auto;
-}
-
-.card-row .card .card-body {
-    padding: 32px 20px;
-}
-
-.main-img-cont {
-    display: flex;
-    flex-direction: row;
-    /* justify-content: space-between; */
     margin-top: 60px;
-    margin: 60px 4.9%;
-    gap: 20%;
+    /* margin: 20px 0%; */
     text-align: center;
-    font: normal normal bold 18px/24px Nunito Sans;
-}
-
-.main-img-cont .image-cont {
-    width: auto;
-    /* margin-right: 24%; */
-}
-
-.main-img-cont .image-cont:nth-last-of-type(2) {
-    margin-right: 0;
+    font: normal normal bold 18px/24px "Nunito Sans", sans-serif;
+  }
+  .main-img-cont .image-cont {
     width: 100%;
+    margin-bottom: 30px;
+  }
+  .main-img-cont .image-cont:nth-of-type(1) {
     position: relative;
     left: -8%;
-
-}
-
-.main-img-cont .image-cont:last-of-type {
-    /* align-self: flex-end;*/
+  }
+  .second p {
+    margin-left: 10px;
+  }
+  .last {
+    margin-top: 13%;
     position: relative;
-    left: -10%;
-
-}
-
-.img img {
-    width: 185px;
-    height: 78px;
-}
-
-img.last-img {
-    width: 90px;
-    height: 80px;
-}
-
-.second img {
-    width: 150px;
-}
-
-.last {
-    position: relative;
-    width: 100%;
-    /* width: 98px; */
-    height: 58px;
-}
-
-.cont:last-of-type {
+    left: 3%;
+  }
+  .cont:last-of-type {
     margin-bottom: 0px;
-}
-
-footer {
-    background: #000000 0% 0% no-repeat padding-box;
-    margin-top: 10%;
-    width: 100%;
-    color: #FFFFFF;
-    padding: 25% 0px 1% 0px;
-}
-
-footer p {
-    position: relative;
-    top: 80%;
-    text-align: center;
-}
-
-.overlay {
-    display: block;
-}
-
-.animate-left{
-    transform: translate(-200px, -200px);
-    opacity: 0;
-    transition: all 0.65s ease-in-out;
-   }
-   .animate-right{
-    transform: translate(200px, 300px);
-    opacity: 0;
-    transition: all 0.65s ease-in-out;
-   }
-   .visible{
-    opacity: 1;
-    transform: translate(0px);
-    transition: all 0.65s linear;
-   }
-
-@media screen and (max-width:800px) {
-    .mobile {
-        display: inline-block;
-    }
-
-    header {
-        display: flex;
-        flex-direction: row;
-        color: #fff;
-    }
-
-    header div {
-        text-align: left;
-        margin: 0px;
-    }
-
-    header img {
-        position: relative;
-        margin-top: 20px;
-        left: 29%;
-        width: 100px;
-        height: 48px;
-        margin-bottom: 20px;
-        /* margin-left: 14%; */
-        /* top: 10px; */
-    }
-
-    header .navbar {
-        position: absolute;
-        display: block;
-        top: 0%;
-        bottom: 0%;
-        /* width: 0%;
-        height: 0%; */
-        background: rgba(0, 0, 0, 0.9);
-        z-index: 200;
-        color: #fff;
-        overflow-x: hidden;
-        transition: all 0.6s linear;
-    }
-
-    ul {
-        padding: 0;
-        margin-top: 55px;
-        opacity: 0;
-    }
-
-    ul li {
-        position: relative;
-        display: block;
-        margin-top: 30px;
-        text-align: center;
-        opacity: 1;
-    }
-
-    .close {
-        position: relative;
-        width: 100%;
-        height: 22px;
-        right: 4%;
-        color: #fff;
-        float: right;
-        /* bottom: 100%; */
-        top: 0.6%;
-        margin: 0px;
-        margin-left: 0px;
-        margin-left: 2.9%;
-        max-width: 50px;
-        align-self: center;
-        font: normal normal normal 2em 'Be Vietnam';
-        font-family: 'Be Vietnam', sans-serif;
-    }
-
-    .hide {
-        /* transform: translateY(30px); */
-        position: relative;
-        width: 0%;
-        opacity: 1;
-        left: 0;
-        top: 0;
-        transition: all 0.6s linear;
-    }
-
-    .fade {
-        opacity: 0;
-    }
-
-    .notfade {
-        opacity: 1;
-    }
-
-    .open {
-        top: 0%;
-        bottom: 0%;
-        width: 100%;
-        height: 100%;
-        /* transform: translate(0px); */
-        transform: translateX(0%);
-    }
-
-    .hamburg {
-        position: relative;
-        width: 100px;
-        left: 3%;
-        top: 46%;
-        height: 22px;
-        margin: 0px;
-        margin-left: 0px;
-        margin-left: 2.9%;
-        max-width: 50px;
-        align-self: center;
-    }
-
-    .hamburg div {
-        background-color: #212020;
-        width: 35px;
-        height: 4px;
-        margin-bottom: 3px;
-        border-radius: 7px;
-    }
-
-    .hamburg .ham-first {
-        width: 20px;
-    }
-
-    .hamburg .ham-second {
-        width: 27px;
-    }
-
-    .blue-bg {
-        padding: 0px;
-    }
-
-    .right-main-container {
-        width: 100%;
-        height: 550px;
-    }
-
-    .top-main-container {
-        padding: 0%;
-    }
-
-    .left-main-container {
-        position: absolute;
-        width: 100%;
-        z-index: 100;
-        margin: 0;
-        padding: 9% 5% 7% 5%;
-        text-align: center;
-        color: #fff;
-        background: rgba(0, 0, 0, 0.5);
-        height: 450px;
-    }
-
-    .left-main-container .btn {
-        width: 100%;
-    }
-
-    .cont {
-        margin-bottom: 20px;
-    }
-
-    .card-cont,
-    .img-card {
-        flex-direction: column;
-        align-content: center;
-        padding: 0% 10%;
-    }
-
-    .img-card {
-        align-content: center;
-    }
-
-    .card-cont div,
-    .img-card div {
-        margin-bottom: 20px;
-        margin-top: 0px;
-    }
-
-    .img-card .card {
-        margin: 120px 0% 0px 0px;
-        padding-left: 0px;
-    }
-
-    .card-text,
-    .card-body,
-    .card-title {
-        text-align: center;
-    }
-
-    /* .img-card .card-body {
-        padding-right: 36px;
+  }
+  /* .card-row .card {
+      margin-right:30px;
     } */
-
-    .card-img-top {
-        position: relative;
-        left: 10%;
-    }
-
-    .third-cont .card-cont {
-        padding: 0%;
-        width: 100%;
-        text-align: center;
-        margin-bottom: 50px;
-    }
-
-    .third-cont .btn {
-        margin-top: 15px;
-    }
-
-    .third-cont {
-        margin-bottom: 50px;
-    }
-
-    .card-cont .btn,
-    .card-head {
-        width: 100%;
-    }
-
-    .third-cont .even {
-        position: relative;
-        right: 0;
-        left: 0%;
-    }
-
-    .bg-cont {
-        width: 100%;
-        height: 363px;
-        display: inline-block;
-        position: relative;
-        background: #F8FAFC 0% 0% no-repeat padding-box;
-        box-shadow: 0px;
-        border-radius: 42px;
-        left: -50px;
-        width: 1089px;
-    }
-
-    .profile-cont {
-        height: 48px;
-    }
-
-    .card-head {
-        text-align: center;
-        font-size: 21px;
-    }
-
-    .white-bg {
-        padding: 0% 8%;
-    }
-
-    .row-sm-6.card-cont {
-        padding: 0;
-    }
-
-    .row-sm-6 {
-        position: relative;
-        align-content: center;
-        /* right: 10%; */
-        top: -10%;
-    }
-    
-    .card-row .card {
-        width: 100%;
-        position: absolute;
-        margin: 0;
-        box-shadow: none;
-        border-color:#89898929;
-      }
-      .card-row .card:first-of-type{
-        transform: translateX(0%);
-        transition: all 0.6s linear;
-        z-index: 99;
-      }
-      .card-row .card:nth-of-type(2){
-        transform: translateX(0%);
-        transition: all 0.6s linear;
-        z-index: 90;
-      }
-      .card-row .card:last-of-type{
-        transform: translateX(0%);
-        transition: all 0.6s linear;
-        z-index: 80;
-      }
-.left{
-    transform: translateX(100%);
-    transition: all 0.4s linear;
 }
 
-    .inner-carousel span {
-        z-index: 100;
-    } 
-
-    .next {
-        position: absolute;
-        top: 20% !important;
-        right: 0% !important;
-        float: right;
-        bottom: 25%;
-        left: 22%;
-    }
-
-    .prev {
-        position: absolute;
-        display: inline block;
-        left: -13%;
-        top: 20% !important;
-        float: left;
-        z-index: 100;
-    }
-
-    .inner-carousel .row-sm-6 {
-        flex-direction:row-reverse;
-        position: relative;
-        align-content: center;
-        right: 10%;
-        top: -10%;
-        width: 320px;
-        overflow-x: scroll;
-        scroll-behavior: smooth;
-        
-        /* Firefox */
-        -ms-overflow-style: none;
-        /* Internet Explorer 10+ */
-
-    }
-
-    /* .slider-wrapper {
-        position: absolute;
-        overflow: hidden;
-
-    } */
-
-    .inner-cont h4 {
-        position: relative;
-        top: 2.9%;
-        margin-left: 15px;
-        text-align: left;
-        font: normal normal 900 25px/34px Nunito Sans;
-        letter-spacing: 0px;
-    }
-
-    div.cont:last-of-type {
-        padding: 0px;
-        margin-top: 30%;
-    }
-
-    .main-img-cont {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-top: 60px;
-        /* margin: 20px 0%; */
-        text-align: center;
-        font: normal normal bold 18px/24px Nunito Sans;
-    }
-
-    .main-img-cont .image-cont {
-        width: 100%;
-        margin-bottom: 30px;
-    }
-
-    .main-img-cont .image-cont:nth-of-type(1) {
-        position: relative;
-        left: -8%;
-    }
-
-    .second p {
-        margin-left: 10px;
-    }
-
-    .last {
-        margin-top: 13%;
-        position: relative;
-        left: 3%;
-    }
-
-    .cont:last-of-type {
-        margin-bottom: 0px;
-    }
-
-    /* .card-row .card {
-        margin-right:30px;
-      } */
-}
+/*# sourceMappingURL=index.css.map */
